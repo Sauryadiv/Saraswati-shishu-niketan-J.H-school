@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -10,7 +11,7 @@
         
         /* Header & Nav */
         header { background: #003366; color: white; padding: 1.5rem; text-align: center; border-bottom: 4px solid #ffcc00; }
-        nav { background: #002244; display: flex; justify-content: center; flex-wrap: wrap; sticky; top: 0; z-index: 1000; }
+        nav { background: #002244; display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; padding: 12px 18px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
         nav a:hover { background: #ffcc00; color: #002244; }
 
@@ -60,43 +61,50 @@
     </section>
 
     <section class="message-box">
-        <img src="https://via.placeholder.com/150" alt="Principal">
+        <img src="principal.jpg" alt="Principal" onerror="this.src='https://via.placeholder.com/150'">
         <div>
             <h3>Principal's Message</h3>
             <p>"Shiksha ka uddeshya keval gyan prapt karna nahi, balki charitra nirman hai. Hamara school bacchon ko sanskar aur adhunik shiksha dono pradan karta hai."</p>
         </div>
     </section>
-<form action="anoopsaxena452@gmail.com" method="POST">
+
     <section id="admission" class="admission-form">
         <h2 style="text-align: center;">Online Admission Inquiry</h2>
         <p style="text-align: center; font-size: 0.9rem;">Satra 2026-27 ke liye form bharein</p>
-        <form>
-            <input type="text" placeholder="student's name" required>
-            <input type="text" placeholder="Father's name" required>
-            <input type="text" placeholder="Mother's name" required>
-            <input type="text" placeholder="previous school name" required>
-            <input type="number" placeholder="Mobile Number" required>
-            <select>
-                <option>Class Select Karein</option>
-                <option>Nursery</option>
-                <option>Class 1</option>
-                <option>Class 2</option>
-                <option>Class 3</option>
-                <option>Class 4</option>
-                <option>Class 5</option>
-                <option>Class 6</option>
-                <option>Class 7</option>
-                <option>Class 8</option>
+        
+        <form action="https://formspree.io/f/xoqgyyww" method="POST">
+            <input type="text" name="Student_Name" placeholder="Student's Name" required>
+            <input type="text" name="Father_Name" placeholder="Father's Name" required>
+            <input type="text" name="Mother_Name" placeholder="Mother's Name" required>
+            <input type="text" name="Previous_School" placeholder="Previous School Name">
+            <input type="number" name="Mobile" placeholder="Mobile Number" required>
+            
+            <select name="Class">
+                <option value="">Class Select Karein</option>
+                <option value="Nursery">Nursery</option>
+                <option value="LKG">LKG</option>
+                <option value="UKG">UKG</option>
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
+                <option value="Class 4">Class 4</option>
+                <option value="Class 5">Class 5</option>
+                <option value="Class 6">Class 6</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
             </select>
-            <button type="submit" class="btn-submit">Submitted</button>
+
+            <input type="hidden" name="_replyto" value="anoopsaxena452@gmail.com">
+            
+            <button type="submit" class="btn-submit">Submit Karein</button>
         </form>
     </section>
 
     <section id="contact" style="margin-top: 40px; text-align: center;">
         <h2 class="section-title">Contact Us</h2>
         <p>📍 Suhag Nagar, Firozabad, Uttar Pradesh</p>
-        <p>📞 +91 6398328864,8057759899</p>
-        <p>📧 info@ssniketan.com</p>
+        <p>📞 +91 6398328864, 8057759899</p>
+        <p>📧 anoopsaxena452@gmail.com</p>
     </section>
 
 </div>
