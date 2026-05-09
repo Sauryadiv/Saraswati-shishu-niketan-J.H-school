@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saraswati Shishu Niketan | Official Website</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9f9f9; color: #333; }
+        
+        /* Header & Nav */
+        header { background: #003366; color: white; padding: 1.5rem; text-align: center; border-bottom: 4px solid #ffcc00; }
+        nav { background: #002244; display: flex; justify-content: center; flex-wrap: wrap; sticky; top: 0; z-index: 1000; }
+        nav a { color: white; padding: 12px 18px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { background: #ffcc00; color: #002244; }
+
+        /* Sections */
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        .section-title { text-align: center; margin-bottom: 30px; color: #003366; border-bottom: 2px solid #ffcc00; display: inline-block; padding-bottom: 5px; }
+        
+        /* Principal Message Section */
+        .message-box { background: white; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 40px; }
+        .message-box img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #003366; object-fit: cover; }
+        
+        /* Admission Form */
+        .admission-form { background: #003366; color: white; padding: 30px; border-radius: 10px; margin-top: 40px; }
+        .admission-form input, .admission-form select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; }
+        .btn-submit { background: #ffcc00; color: #002244; padding: 12px 25px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 1.1rem; }
+
+        /* Footer */
+        footer { background: #111; color: #ccc; text-align: center; padding: 30px; margin-top: 50px; }
+        
+        /* Mobile adjustment */
+        @media (max-width: 768px) {
+            .message-box { flex-direction: column; text-align: center; }
+            nav { flex-direction: column; width: 100%; }
+            nav a { border-bottom: 1px solid #004488; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Saraswati Shishu Niketan</h1>
+    <p>Suhag Nagar, Firozabad</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#admission">Admission 2026-27</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    
+    <section id="home" style="text-align: center; padding: 40px 0;">
+        <h2 class="section-title">Hamare Vidhyalaya Mein Aapka Swagat Hai</h2>
+        <p>Hum bacchon ke sarvangeen vikas ke liye pratibadh hain.</p>
+    </section>
+
+    <section class="message-box">
+        <img src="https://via.placeholder.com/150" alt="Principal">
+        <div>
+            <h3>Principal's Message</h3>
+            <p>"Shiksha ka uddeshya keval gyan prapt karna nahi, balki charitra nirman hai. Hamara school bacchon ko sanskar aur adhunik shiksha dono pradan karta hai."</p>
+        </div>
+    </section>
+<form action="anoopsaxena452@gmail.com" method="POST">
+    <section id="admission" class="admission-form">
+        <h2 style="text-align: center;">Online Admission Inquiry</h2>
+        <p style="text-align: center; font-size: 0.9rem;">Satra 2026-27 ke liye form bharein</p>
+        <form>
+            <input type="text" placeholder="student's name" required>
+            <input type="text" placeholder="Father's name" required>
+            <input type="text" placeholder="Mother's name" required>
+            <input type="text" placeholder="previous school name" required>
+            <input type="number" placeholder="Mobile Number" required>
+            <select>
+                <option>Class Select Karein</option>
+                <option>Nursery</option>
+                <option>Class 1</option>
+                <option>Class 2</option>
+                <option>Class 3</option>
+                <option>Class 4</option>
+                <option>Class 5</option>
+                <option>Class 6</option>
+                <option>Class 7</option>
+                <option>Class 8</option>
+            </select>
+            <button type="submit" class="btn-submit">Submitted</button>
+        </form>
+    </section>
+
+    <section id="contact" style="margin-top: 40px; text-align: center;">
+        <h2 class="section-title">Contact Us</h2>
+        <p>📍 Suhag Nagar, Firozabad, Uttar Pradesh</p>
+        <p>📞 +91 6398328864,8057759899</p>
+        <p>📧 info@ssniketan.com</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Saraswati Shishu Niketan | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
